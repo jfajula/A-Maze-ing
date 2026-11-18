@@ -180,11 +180,11 @@ The whole project ended being done by the same person and that is an errors caus
 We could have planned better and have clearer task divisions since the beginning with some more time.
 
 ## Resources
-https://docs.python.org/3/
-https://en.wikipedia.org/wiki/Breadth-first_search
-https://www.geeksforgeeks.org/dsa/breadth-first-search-or-bfs-for-a-graph/
-https://en.wikipedia.org/wiki/Depth-first_search
-https://www.geeksforgeeks.org/dsa/depth-first-search-or-dfs-for-a-graph/
+- https://docs.python.org/3/
+- https://en.wikipedia.org/wiki/Breadth-first_search
+- https://www.geeksforgeeks.org/dsa/breadth-first-search-or-bfs-for-a-graph/
+- https://en.wikipedia.org/wiki/Depth-first_search
+- https://www.geeksforgeeks.org/dsa/depth-first-search-or-dfs-for-a-graph/
 
 
 ### Tools used
