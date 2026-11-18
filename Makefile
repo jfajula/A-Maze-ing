@@ -27,4 +27,4 @@ lint:
 		--explicit-package-bases \
 		--exclude '^(venv|\.venv|env|mlx)/'
 
-
+.PHONY: install run build debug clean lint

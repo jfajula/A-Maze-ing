@@ -4,13 +4,12 @@ class Cell:
     SOUTH = 4
     WEST = 8
 
-
-def __init__(self: "Cell", pos: tuple[int, int], visited: bool = False,
-             walls: int = 15, is_42: bool = False) -> None:
-    self.pos = pos
-    self.visited = visited
-    self.walls = walls
-    self.is_42 = is_42
+    def __init__(self: "Cell", pos: tuple[int, int], visited: bool = False,
+                 walls: int = 15, is_42: bool = False) -> None:
+        self.pos = pos
+        self.visited = visited
+        self.walls = walls
+        self.is_42 = is_42
 
     @classmethod
     def get_dirs(cls: "type[Cell]") -> list[int]:
@@ -27,6 +26,7 @@ def __init__(self: "Cell", pos: tuple[int, int], visited: bool = False,
             return "S"
         if dir == cls.WEST:
             return "W"
+
         return None
 
     def has_wall(self: "Cell", dir: int) -> bool:

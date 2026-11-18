@@ -74,7 +74,7 @@ class MazeImperfect(Grid):
             return res_down or res_top
         return True
 
-    def make_imperfect(self: "MazeImperfect", rate: float = 0.1) -> None:
+    def make_imperfect(self: "MazeImperfect", rate: float = 0.50) -> None:
         total_walls = self.get_internal_walls()
 
         num_to_rmv = int(len(total_walls) * rate)
@@ -84,5 +84,5 @@ class MazeImperfect(Grid):
                 break
 
             if not self.check_opening(cell, dir):
-                self.rmv_wall_btw(cell, dir)
+                self.rmv_wall_btwn(cell, dir)
                 num_rmvd += 1

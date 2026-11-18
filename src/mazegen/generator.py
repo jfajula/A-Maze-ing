@@ -1,8 +1,7 @@
-
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING
 
-from mazegen.config.config_errors import Config, ConfigError
+from mazegen.config.config_errors import Config
 from mazegen.grid.grid import Grid
 if TYPE_CHECKING:
     from mazegen.algorithm.imperfect import MazeImperfect

@@ -5,8 +5,8 @@ from mazegen.grid.grid import Grid
 from mazegen.generator import MazeGenerator
 from mazegen.solve.solver import MazeSolver
 from write_output import OutputWriter
-from maze import MazePainter
-from colors import ColorTheme
+from mazedisp.maze import MazePainter
+from mazedisp.colors import ColorTheme
 
 
 class MazeDisplay:

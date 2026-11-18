@@ -11,12 +11,12 @@ class Config():
                            "Mandatory key 'WIDTH' does not exist.")
         except ValueError:
             raise ValueError("ConfigError: Value of 'WIDTH' is not a number.")
-        
+
         if self.width < 1:
             raise ConfigError("ConfigError: Invalid 'WIDTH' value. "
                               "Cannot generate maze.")
 
-        try:    
+        try:
             self.height = int(config["HEIGHT"])
         except KeyError:
             raise KeyError("ConfigError: "

@@ -26,7 +26,7 @@ class MazeDFS(MazeGenerator):
             neighbors = self.get_unvisited_neighbors(current)
             if neighbors:
                 neighbor, direction = random.choice(neighbors)
-                self.rmv_wall_btw(current, direction)
+                self.rmv_wall_btwn(current, direction)
                 neighbor.visited = True
                 stack.append(neighbor)
             else:

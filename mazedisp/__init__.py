@@ -1,6 +1,8 @@
-from mazedisp import colors, display, maze
+from mazedisp.colors import ColorTheme
+from mazedisp.display import MazeDisplay
+from mazedisp.maze import MazePainter
 __all__ = [
-    "colors",
-    "display",
-    "maze"
+    "ColorTheme",
+    "MazeDisplay",
+    "MazePainter"
 ]

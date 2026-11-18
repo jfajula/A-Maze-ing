@@ -15,11 +15,11 @@ class ColorTheme:
         cls.THEMES = {
             0: cls(
                 name="default",
-                walls=-1,
-                entry=-1,
-                exit=-1,
-                path=6,
-                fill_42=7
+                walls=26,
+                entry=38,
+                exit=93,
+                path=183,
+                fill_42=69
             ),
             1: cls(
                 name="red",

@@ -40,7 +40,7 @@ class MazeSolver:
 
         current = end
         while parents[current] is not None:
-            parent, dir = parents[current]
+            parent, dir = parents[current]  # type: ignore
             solution.append(dir)
             current = parent
 
