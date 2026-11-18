@@ -1,8 +1,8 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
 
-from mazegen.grid.maze_cell import Cell
-from mazegen.grid.maze_grid import Grid
+from mazegen.grid.cell import Cell
+from mazegen.grid.grid import Grid
 if TYPE_CHECKING:
     from mazegen.config.config_errors import Config
     from mazegen.generator import MazeGenerator

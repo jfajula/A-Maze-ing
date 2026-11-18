@@ -1,6 +1,7 @@
 from mazegen.config.config_errors import Config, ConfigError
 from mazegen.grid.cell import Cell
 
+
 class Grid:
     def __init__(self: "Grid", config: Config) -> None:
         self.width = config.width

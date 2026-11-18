@@ -184,7 +184,7 @@ class MazePainter:
             return
 
         (x, y) = self.maze.entry
-
+dfs
         for i in self.path:
             cell_row = self.get_cell_row(y)
             cell_col = self.get_cell_col(x)

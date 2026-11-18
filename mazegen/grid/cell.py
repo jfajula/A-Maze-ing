@@ -4,8 +4,9 @@ class Cell:
     SOUTH = 4
     WEST = 8
 
+
 def __init__(self: "Cell", pos: tuple[int, int], visited: bool = False,
-                 walls: int = 15, is_42: bool = False) -> None:
+             walls: int = 15, is_42: bool = False) -> None:
     self.pos = pos
     self.visited = visited
     self.walls = walls

@@ -19,9 +19,9 @@ class MazeGenerator(Grid, ABC):
     @classmethod
     def generate_maze(cls: "type[MazeGenerator]",
                       config: Config) -> "MazeGenerator | MazeImperfect":
-        
-        from mazegen.algo.maze_algo_dfs import MazeDFS
-        from mazegen.algo.maze_imperfect import MazeImperfect
+
+        from mazegen.algorithm.dfs_algo import MazeDFS
+        from mazegen.algorithm.imperfect import MazeImperfect
 
         maze: MazeGenerator
         maze = MazeDFS(config)

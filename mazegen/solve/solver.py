@@ -1,9 +1,9 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
 
-from mazegen.grid.maze_cell import Cell
+from mazegen.grid.cell import Cell
 if TYPE_CHECKING:
-    from mazegen.grid.maze_grid import Grid
+    from mazegen.grid.grid import Grid
 
 
 class MazeSolver:
@@ -40,7 +40,7 @@ class MazeSolver:
 
         current = end
         while parents[current] is not None:
-            parent, dir = parents[current]  # type: ignore
+            parent, dir = parents[current]
             solution.append(dir)
             current = parent
 
@@ -62,5 +62,5 @@ class MazeSolver:
             if current == end:
                 return self.reconstruct_path(parents, end)
             self.find_open_neighbors(current, queue, parents)
-        
+
         return None
