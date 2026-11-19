@@ -23,7 +23,6 @@ class MazePainter:
         else:
             self.theme = theme
         self.init_colors()
-        # Animation
         self.pad_refresh_params: tuple[int, int, int, int] | None = None
         self.delay = delay
 
@@ -172,7 +171,6 @@ class MazePainter:
 
         self.draw_top_border(row)
         row += 1
-        # Print maze row by row
         for y in range(self.maze.height):
             self.draw_vertical_walls(row, y)
             row += 1

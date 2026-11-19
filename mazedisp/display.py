@@ -211,7 +211,6 @@ class MazeDisplay:
 
         try:
             self.stdscr.move(prompt_screen_y, prompt_screen_x)
-            # Clear the line
             self.stdscr.clrtoeol()
             self.stdscr.refresh()
         except curses.error:
